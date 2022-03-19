@@ -88,15 +88,15 @@ console.log('Updated the 2nd food:', favoriteFoodsArray);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
-let abcFavoriteFoods = favoriteFoodsArray.sort(); // used https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-console.log('Favorite foods in ABC order:', abcFavoriteFoods); 
-let reversedABCFavoriteFoods = abcFavoriteFoods.reverse(); // used https://www.w3schools.com/jsref/jsref_sort.asp and 
+let abcFavoriteFoods = favoriteFoodsArray.sort(); // to put the array in alphabetical order, referenced https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+//console.log('Favorite foods in ABC order:', abcFavoriteFoods); 
+let reversedABCFavoriteFoods = abcFavoriteFoods.reverse(); // to reverse the order of the array, referenced https://www.w3schools.com/jsref/jsref_sort.asp and https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse 
 console.log('Favorite foods in reverse ABC order: ', reversedABCFavoriteFoods);
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
-let stringFavoriteFoods = favoriteFoodsArray.join(' and '); // used https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+let stringFavoriteFoods = favoriteFoodsArray.join(' and '); // referenced https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 console.log('String of favorite foods:', stringFavoriteFoods); // This showed the reversed alphabetical version of the string...I'm guessing some built in methods make permanent changes to the values of the favoriteFoodsArray? Because when I try initializing the foods array using const, the same thing happens. UPDATE - talked to Matt, he explained some differences between 'pass by reference' languages like JavaScript vs 'pass by value'. In this case, the specific memory of the foods array is being altered as we call the different built-in methods that change arrays (like .sort and .reverse). 
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
@@ -104,5 +104,5 @@ console.log('String of favorite foods:', stringFavoriteFoods); // This showed th
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
-let foodsAnimals = favoriteFoodsArray.concat(animalArray); // used https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
+let foodsAnimals = favoriteFoodsArray.concat(animalArray); // referenced https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
 console.log('Foods and dogs in an array:', foodsAnimals);
